@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class demo {
 
     public static void main(String[] args){
@@ -25,6 +27,20 @@ public class demo {
 
         System.out.println(age);
         System.out.println(age1);
+
+        //user input
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter your name: ");
+        String gname = scanner.nextLine();
+
+        System.out.println("Enter your age");
+
+        int age3 = scanner.nextInt();
+
+        System.out.println("Hello, " + gname + "! You are " + age3 + " years old.");
+
+        scanner.close();
 
     }
 }
